@@ -1,0 +1,52 @@
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\usepackage{pgfpages} 
+
+\setbeameroption{show notes on second screen=right}
+
+\lstset{
+  numbers=left,
+  numberstyle=\tiny,
+  basicstyle=\tiny
+}
+
+\usetheme{Warsaw}
+
+\title[Io]{Hey ho, Io!}
+\author{Mariusz Lusiak}
+\institute{applicake.com}
+
+\begin{document}
+  
+  \section{}
+  
+    \begin{frame}
+      \titlepage
+    \end{frame}
+  
+    \begin{frame}
+      \tableofcontents[hideallsubsections]
+    \end{frame}
+  
+  \section{The origin}
+  \include{sections/the_origin}
+  
+  \section{The features}
+  \include{sections/the_features}
+  
+  \section{The syntax}
+  \include{sections/the_syntax}
+  
+  \section{The concurrency} % (fold)
+  \label{sec:the_concurrency}
+  \include{sections/the_concurrency}
+  % section the_concurrency (end)
+  
+  \section{The challenge} % (fold)
+  \label{sec:the_challenge}
+  \include{sections/the_challenge}
+  % section the_challenge (end)
+    
+\end{document}
