@@ -6,7 +6,24 @@
 
 \begin{frame}
   \begin{center}
+    Coroutines, Actors, Futures
+  \end{center}
+\end{frame}
+
+\begin{frame}
+  \begin{center}
     Coroutines
+  \end{center}
+  \note{
+    \begin{itemize}
+      \item methods that voluntarily pass execution to other process
+    \end{itemize}
+  }
+\end{frame}
+
+\begin{frame}
+  \begin{center}
+    Live coding time!
   \end{center}
 \end{frame}
 
@@ -22,8 +39,16 @@
   \end{center}
 \end{frame}
 
-\begin{frame}
+\begin{frame}[fragile]
   \begin{center}
-    Dead-locks automatically detected
+    \begin{lstlisting}
+      futureResult := 
+        URL with("http://google.com/") @fetch
+      writeln("something")
+      writeln(
+        "fetched", 
+        futureResult size, 
+        " bytes")
+    \end{lstlisting}
   \end{center}
 \end{frame}
